@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".profile_Fragment">
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="logout"
+        android:textColor="#feb209"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="230dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/poppins_semibold"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/user"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        app:cardCornerRadius="21dp"
+        app:cardElevation="21dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="profile Details"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Your Name:"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/YourName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="15.5dp"
+                android:textColor="@color/black"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/poppins_semibold"
+                android:maxLines="1"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/viewName"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="7.3dp"
+                android:layout_marginRight="44.3dp"
+                android:background="#d5d5d5" />
+
+            <TextView
+                android:id="@+id/Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Your E-mail:"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/YourEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="15.5dp"
+                android:textColor="@color/black"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/poppins_semibold"
+                android:maxLines="1"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/viewEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="7.3dp"
+                android:layout_marginRight="44.3dp"
+                android:background="#d5d5d5" />
+            <TextView
+                android:id="@+id/userRollNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Your Roll No:"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/YourRollNO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="15.5dp"
+                android:textColor="@color/black"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/poppins_semibold"
+                android:maxLines="1"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/viewRoll"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="7.3dp"
+                android:layout_marginRight="44.3dp"
+                android:background="#d5d5d5" />
+
+            <TextView
+                android:id="@+id/TextSemester"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Your Semester:"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/YourSemester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="15.5dp"
+                android:textColor="@color/black"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/poppins_semibold"
+                android:maxLines="1"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/viewSemester"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="7.3dp"
+                android:layout_marginRight="44.3dp"
+                android:background="#d5d5d5" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingactionbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_baseline_add_24"
+        app:elevation="3dp"
+        app:pressedTranslationZ="12dp"
+        />
+
+</LinearLayout>

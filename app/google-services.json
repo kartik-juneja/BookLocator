@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "361858524797",
+    "firebase_url": "https://book-locator-6798d-default-rtdb.firebaseio.com",
+    "project_id": "book-locator-6798d",
+    "storage_bucket": "book-locator-6798d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361858524797:android:c5e39e8f341c63cb093314",
+        "android_client_info": {
+          "package_name": "com.bharat.booklocator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "361858524797-9ie7dplb12ufvsstfkolavvb41ik24fn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bharat.booklocator",
+            "certificate_hash": "84c5878cce872613628fa91f03143f1d60e5f4ac"
+          }
+        },
+        {
+          "client_id": "361858524797-p7rps07cl7fghqd15d99op89ip7ufhm4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuh2-VpEuGMoyE29s8NgtUErcQhNi_PvU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "361858524797-8u6bpvpumu2nvq0ifb4hvmg6ipqiel9i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
