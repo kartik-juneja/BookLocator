@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style/style_adminPage.css">
+
+    <script>
+       
+        function preventBack(){
+            window.history.forward();
+        }
+        preventBack();
+      </script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="bg_title">
+            <p id="titlePage">ADMIN PANEL</p>
+        </div>
+
+        <!-- section : nav bar  -->
+        <div class="navBar">
+            <ul>
+                <li><a href="adminPage.html">Add Book</a></li>
+                <li><a href="adminPage.html">Issued Books</a></li>
+                <li><a href="BookRequest.html">Book Requests</a></li>
+                <li><a href="adminPage.html">All books </a></li>
+                <li><a href="#" id="signout">Logout</a></li>
+            </ul>
+        </div>
+
+        <div class="div">
+            <p style="text-align: center;">This is the administration panel.<br />Here you can add, edit, remove books,
+                Issue Book and users.</p>
+        </div>
+        
+    </div>
+
+        <div class="listOfBooks">
+
+            <p id="addedBooks">BOOKS Requests</p>
+
+            <table id="bookTable">
+                <thead>
+                    <th>BOOK TITLE</th>
+                    <th>BOOK AUTHOR</th>
+                    <th>PUBLISHER</th>
+                    <th>BRANCH</th>
+                    <th>SEMESTER</th>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div> 
+        <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="functionaliy/bookrequst.js"></script>
+</body>
+</html>

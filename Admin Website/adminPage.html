@@ -1,0 +1,177 @@
+<html>
+
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style/style_adminPage.css">
+
+    <script>
+       
+        function preventBack(){
+            window.history.forward();
+        }
+        preventBack();
+      </script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="bg_title">
+            <p id="titlePage">ADMIN PANEL</p>
+        </div>
+
+        <!-- section : nav bar  -->
+        <div class="navBar">
+            <ul><li><a href= "adminPage.html">Home</a></li>
+                <li><a href="addBook.html">Add Book</a></li>
+                <li><a href="#tableReservations">Issued Books</a></li>
+                <li><a href="BookRequest.html">Book Request</a></li>
+                <li><a href="#addedBooks">All books </a></li>
+                <li><a href="#" id="signout">Logout</a></li>
+            </ul>
+        </div>
+
+        <div class="div">
+            <p style="text-align: center;">This is the administration panel.<br />Here you can add, edit, remove books,
+                Issue Books and users.</p>
+        </div>
+
+        <!-- section : Issue Book  -->
+
+         <div>
+            <p id="issueBookData">Issue Books</p>
+        </div>
+
+        <form id="issueBook">
+            <label>Barcode No </label>
+            <input type="number" id="issuebarcode" placeholder="Enter Book Barcode">
+            <br>
+            <h3>OR</h3>
+            <label>Book Name </label>
+            <input type="text" id="issuebookName" placeholder="Enter Book Name">
+            <br>
+
+       
+
+            <div class="div">
+                <button id="addBtn">submit</button>
+            </div>
+            <hr>
+        </form> 
+
+
+            <!-- section : Issue Book List -->
+
+
+            <!-- section : CHECK reservation -->
+            <p id="issueBookTable">Available Books</p>
+            <div class="div">
+                <table class="tableissue" id="issueTable">
+                    <thead id="issueTable">
+                        <th>Barcode</th>
+                        <th>BookName</th>
+                        <th>AuthorName</th>
+                    </thead>
+                    <tbody id="issueBody">
+                      
+                    </tbody>
+                </table>
+            </div>
+            <!-- <hr>
+
+
+            <p id="tableReservations">Issue Book List</p>
+            <div class="div">
+                <table class="tableReserv" id="tableReserv">
+                    <thead id="reservTable">
+                        <th>TITLE</th>
+                        <th>AUTHOR</th>
+                        <th>PICKUP DATE</th>
+                        <th>RETURN DATE</th>
+                    </thead>
+                    <tbody id="bodyTable">
+                      
+                    </tbody>
+                </table>
+            </div> -->
+
+            <!-- section : library  -->
+
+            <hr>
+            <div class="listOfBooks">
+
+                <p id="addedBooks">BOOKS LIBRARY</p>
+
+                <table id="bookTable">
+                    <thead>
+                        <th>BOOK TITLE</th>
+                        <th>BOOK AUTHOR</th>
+                        <th>PUBLISHED DATE</th>
+                        <th>BARCODE</th>
+                        <th>No Of Books</th>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+            </div> 
+        </div>
+
+        <div class="modal" id="issuemodal">
+            <div class="modal-content">
+                <div class="close">+</div>
+    
+                <input class="inputFields" type="text" id="studentname" placeholder="Enter Student Name">
+                <input class="inputFields" type="text" id="studentRoll" placeholder="Enter Roll No of Student">
+                <label>
+                    Enter Return Date:-
+                </label>
+                <input class="inputFields" type="date" id="returnDate" placeholder="Enter Return Date">
+                
+    
+                <button id="editBtn">Issue</button>
+                <button id="deleteBtn">Cancel</button>
+            </div>
+        </div>
+    
+        
+    <!-- section modal 1   -->
+    <div class="modal">
+        <div class="modal-content">
+            <div class="close">+</div>
+
+            <input class="inputFields" type="text" id="titleB" placeholder="Book title">
+            <input class="inputFields" type="text" id="authorB" placeholder="Book author">
+            <input class="inputFields" type="text" id="dateB" placeholder="Book date">
+            <input class="inputFields" type="text" id="barcodeB" placeholder="Book barcode">
+            <input class="inputFields" type="text" id="countB" placeholder="No of Books">
+
+            <button id="editBtn">Edit</button>
+            <button id="deleteBtn">Delete</button>
+        </div>
+    </div>
+
+    <!-- section modal 2   -->
+    <div class="modal2">
+        <div class="modal-content">
+            <div class="close2">+</div>
+
+            <input class="inputFields" type="text" id="tB" placeholder="Book title">
+            <input class="inputFields" type="text" id="aB" placeholder="Book author">
+            <input class="inputFields" type="text" id="pickupDate" placeholder="Pick up date">
+            <input class="inputFields" type="text" id="returnDate" placeholder="Return date">
+
+            <button id="saveBtn" onclick="saveReservation()">Save</button>
+            <button id="deleteBtn">Delete</button>
+        </div>
+    </div>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="functionaliy/getBooks.js"></script>
+    <!-- <script src="functionaliy/addBookData.js"></script> -->
+    <!-- <script src="functionaliy/getReservations.js"></script> -->
+    <script src="functionaliy/issueBook.js"></script>
+</body>
+
+</html>
